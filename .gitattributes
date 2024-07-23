@@ -1,0 +1,18 @@
+# Enforce LF for all text files
+* text=auto
+
+# Enforce LF for specific file types
+*.sh text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Enforce CRLF for Windows-specific files
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Exclude binary files from line ending conversion
+*.jpg binary
+*.png binary
+*.exe binary
+*.dll binary
